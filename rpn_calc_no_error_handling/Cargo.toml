@@ -1,5 +1,5 @@
 [package]
-name = "notebook"
+name = "rpn_calc_no_error_handling"
 version = "0.1.0"
 authors = ["Asahi Takenouchi <le-soleil-levant.0802@outlook.com>"]
 edition = "2018"
@@ -7,5 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-thiserror = "1.0.20"
-anyhow = "1.0.32"
+clap = "3.0.0-beta.1"
