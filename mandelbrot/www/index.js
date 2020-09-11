@@ -1,3 +1,7 @@
-import * as wasm from "hello-wasm-pack";
+// import * as wasm from "../pkg/mandelbrot";
 
-wasm.greet();
+const wasm = import('../pkg').catch((e) => console.error(e))
+
+wasm.then(({ greet }) => {
+    greet();
+})
