@@ -1,0 +1,27 @@
+[package]
+name = "embedded-system"
+version = "0.1.0"
+authors = ["Asahi Takenouchi <le-soleil-levant.0802@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.6.3"
+cortex-m-rt = "0.6.13"
+cortex-m-semihosting = "0.3.5"
+panic-halt = "0.2.0"
+
+[dependencies.stm32f4]
+version = "0.12.1"
+features = ["stm32f407", "rt"]
+
+[[bin]]
+name = "embedded-system"
+test = false
+bench = false
+
+[profile.release]
+codegen-uints = 1
+debug = true
+lto = true
