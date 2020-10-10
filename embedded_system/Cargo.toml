@@ -1,5 +1,5 @@
 [package]
-name = "embedded-system"
+name = "embedded_system"
 version = "0.1.0"
 authors = ["Asahi Takenouchi <le-soleil-levant.0802@outlook.com>"]
 edition = "2018"
@@ -17,7 +17,7 @@ version = "0.12.1"
 features = ["stm32f407", "rt"]
 
 [[bin]]
-name = "embedded-system"
+name = "embedded_system"
 test = false
 bench = false
 
